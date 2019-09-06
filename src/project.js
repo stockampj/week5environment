@@ -7,7 +7,7 @@ export class Person {
   }
 
   calcExp() {
-    var remainder = ""
+    let remainder = ""
     if (this.sex === "male") {
       remainder = parseFloat(76.9 - this.age).toFixed(1);
     } else if (this.sex === "female") {
@@ -27,13 +27,13 @@ export class Planet {
     this.position = position
   }
   calcUserAge(user){
-    var convertedAge = ((user.age)/(this.solarConverter)).toFixed(1);
+    let convertedAge = ((user.age)/(this.solarConverter)).toFixed(1);
     convertedAge = parseFloat(convertedAge);
     return convertedAge;
   }
   calcYearsRemaing(user){
-    var earthRemainder = user.calcExp();
-    var convertedRemainder = ((earthRemainder)/(this.solarConverter)).toFixed(1);
+    let earthRemainder = user.calcExp();
+    let convertedRemainder = ((earthRemainder)/(this.solarConverter)).toFixed(1);
     convertedRemainder = parseFloat(convertedRemainder);
     if (convertedRemainder>=0) {
       return "you have " + convertedRemainder + " years left on " + this.name;
@@ -44,22 +44,22 @@ export class Planet {
 
 export class SolarSystem {
   constructor() {
-    var mercury = new Planet("Mercury", .24, 1);
-    var venus = new Planet("Venus", .62, 2);
-    var earth = new Planet("Earth", 1, 3);
-    var mars = new Planet("Mars", 1.88, 4);
-    var jupiter = new Planet ("Jupiter", 11.86, 5);
-    var saturn = new Planet ("Saturn", 29.48, 6);
-    var uranus = new Planet ("Uranus", 84.07, 7);
-    var neptune = new Planet ("Neptune", 164.8, 8);
-    var pluto = new Planet ("Pluto", 164.8, 9);
+    const mercury = new Planet("Mercury", .24, 1);
+    const venus = new Planet("Venus", .62, 2);
+    const earth = new Planet("Earth", 1, 3);
+    const mars = new Planet("Mars", 1.88, 4);
+    const jupiter = new Planet ("Jupiter", 11.86, 5);
+    const saturn = new Planet ("Saturn", 29.48, 6);
+    const uranus = new Planet ("Uranus", 84.07, 7);
+    const neptune = new Planet ("Neptune", 164.8, 8);
+    const pluto = new Planet ("Pluto", 164.8, 9);
     this.system = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto];
   }
 
   getPlanet(name) {
-    var system = this.system;
-    var reference = name;
-    for (var i=0;i<9;i++) {
+    let system = this.system;
+    let reference = name;
+    for (let i=0;i<9;i++) {
       if (system[i].name === reference) {
         return system[i];
       }
@@ -69,5 +69,5 @@ export class SolarSystem {
 }
 
 
-var joel = new Person ("Joel", 36, "male");
+let joel = new Person ("Joel", 36, "male");
 joel.calcExp();
