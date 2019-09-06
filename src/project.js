@@ -18,14 +18,18 @@ export class Person {
   };
 }
 
+export class Planet {
+  constructor(name, solarConverter) {
+    this.name = name;
+    this.solarConverter = solarConverter
+  }
+  calcUserAge(user){
+    var convertedAge = ((user.age)/(this.solarConverter)).toFixed(1);
+    convertedAge = parseFloat(convertedAge);
+    return convertedAge;
+  }
+}
 
-
-
-
-
-
-// class Planet {
-//   constructor(name, solarConverter) {
-//     this.name = name;
-//   }
-// }
+var joel = new Person ("Joel", 36, "male");
+joel.calcExp();
+var mercury = new Planet("Mercury", .24);

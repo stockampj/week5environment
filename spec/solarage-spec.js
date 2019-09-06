@@ -1,4 +1,4 @@
-import { Person } from './../src/project.js';
+import { Person, Planet } from './../src/project.js';
 
 
 describe ('Person', function(){
@@ -16,14 +16,19 @@ describe ('Person', function(){
     var jill = new Person ("Jill", 36, "female");
     var frank = new Person ("Frank", 36, "");
     joel.calcExp();
-    console.log(joel.name, joel.age, joel.lifeRemaining)
     jill.calcExp();
-    console.log(jill.name, jill.age, jill.lifeRemaining)
     frank.calcExp();
-    console.log(frank.name, frank.age, frank.lifeRemaining)
     expect(joel.lifeRemaining).toEqual(40.9);
     expect(jill.lifeRemaining).toEqual(45.6);
     expect(frank.lifeRemaining).toEqual(43.3);
+  });
+});
 
+
+describe ('Planet', function(){
+  it('checks if the planet convert age method successfully converts a users age to that of a particular planet', function(){
+    var joel = new Person ("Joel", 36, "male");
+    var mercury = new Planet("Mercury", .24);
+    expect(mercury.calcUserAge(joel)).toEqual(150);
   });
 });
