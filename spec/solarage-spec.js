@@ -1,4 +1,4 @@
-import { Person, Planet } from './../src/project.js';
+import { Person, Planet, SolarSystem } from './../src/project.js';
 
 
 describe ('Person', function(){
@@ -36,5 +36,12 @@ describe ('Planet', function(){
     expect(venus.calcUserAge(joel)).toEqual(58.1);
     expect(mars.calcUserAge(joel)).toEqual(19.1);
     expect(jupiter.calcUserAge(joel)).toEqual(3);
+  });
+});
+
+describe ('SolarSystem', function(){
+  it('checks if getPlanet method successfully retrieves planet from solar system array', function(){
+    var sol = new SolarSystem();
+    expect(sol.getPlanet("Saturn")).toEqual(sol.system[5]);
   });
 });

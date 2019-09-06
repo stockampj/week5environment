@@ -31,7 +31,7 @@ export class Planet {
   }
 }
 
-class SolarSystem {
+export class SolarSystem {
   constructor() {
     var mercury = new Planet("Mercury", .24, 1);
     var venus = new Planet("Venus", .62, 2);
@@ -49,12 +49,12 @@ class SolarSystem {
     var system = this.system;
     var reference = name;
     for (var i=0;i<9;i++) {
-      if (system[i].name = reference) {
+      if (system[i].name === reference) {
         return system[i]
       }
     }
+    return false;
   }
-  
 }
 
 
