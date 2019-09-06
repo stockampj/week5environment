@@ -24,7 +24,7 @@ _A user should be able to explore how their age translates to other planets in t
 |object holds a converter value for age on mars 1.88 |36|19.1|
 |object holds a converter value for age on jupiter 11.86|36|3.00|
 |user's years remaining is given on a chosen planet|male 36 on mars|21.8|
-|user's years past due is returned |male 85 on jupiter |.7|
+|user's years past due is returned |male 85 on jupiter |0.7 years past due|
 
 
 ## Known Bugs
