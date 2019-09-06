@@ -29,6 +29,12 @@ describe ('Planet', function(){
   it('checks if the planet convert age method successfully converts a users age to that of a particular planet', function(){
     var joel = new Person ("Joel", 36, "male");
     var mercury = new Planet("Mercury", .24);
+    var venus = new Planet("Venus", .62);
+    var mars = new Planet("Mars", 1.88);
+    var jupiter = new Planet ("Jupiter", 11.86);
     expect(mercury.calcUserAge(joel)).toEqual(150);
+    expect(venus.calcUserAge(joel)).toEqual(58.1);
+    expect(mars.calcUserAge(joel)).toEqual(19.1);
+    expect(jupiter.calcUserAge(joel)).toEqual(3);
   });
 });

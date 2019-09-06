@@ -32,4 +32,8 @@ export class Planet {
 
 var joel = new Person ("Joel", 36, "male");
 joel.calcExp();
+
 var mercury = new Planet("Mercury", .24);
+var venus = new Planet("Venus", .62);
+var mars = new Planet("Mars", 1.88);
+var jupiter = new Planet ("Jupiter", 11.86);
