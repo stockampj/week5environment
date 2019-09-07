@@ -1,9 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>project</title>
+    <title>Cosmic Age Converter</title>
   </head>
   <body>
-    <h1>project</h1>
+    <div class="row">
+      <div class="col" id="header">
+        <h1>Cosmic Age Converter</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" id="user-sign-in">
+        <form id="user-dem" action="index.html" method="post">
+          <label for="user-age">Please Enter Your Age</label>
+          <br>
+          <input type="text" name="user-age" id="user-age">
+          <br>
+          <label for="user-sex">(optional) Enter Your Sex</label>
+          <br>
+          <input type="text" name="user-sex" id="user-sex">
+          <br>
+          <button type="submit" name="button" id="explore">Let's Explore!</button>
+        </form>
+      </div>
+    </div>
+    <div class="row" id="solar-display">
+        <div class="col card planet" id="Mercury">
+          <img class="card-img-top" src="images/Mercury.png" alt="image of Mercury">
+          <div class="card-body">
+            <h6>Mercury</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Venus">
+          <img class="card-img-top" src="images/Venus.png" alt="image of Venus">
+          <div class="card-body">
+            <h6>Venus</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Earth">
+          <img class="card-img-top" src="images/Earth.png" alt="image of Earth">
+          <div class="card-body">
+            <h6>Earth</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Mars">
+          <img class="card-img-top" src="images/Mars.png" alt="image of Mars">
+          <div class="card-body">
+            <h6>Mars</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Jupiter">
+          <img class="card-img-top" src="images/Jupiter.png" alt="image of Jupiter">
+          <div class="card-body">
+            <h6>Jupiter</h6>
+          </div>
+        </div>
+        <div class="card planet" id="Saturn">
+          <img class="card-img-top" src="images/Saturn.png" alt="image of Saturn">
+          <div class="card-body">
+            <h6>Saturn</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Uranus">
+          <img class="card-img-top" src="images/Uranus.png" alt="image of Uranus">
+          <div class="card-body">
+            <h6>Uranus</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Neptune">
+          <img class="card-img-top" src="images/Neptune.png" alt="image of Neptune">
+          <div class="card-body">
+            <h6>Neptune</h6>
+          </div>
+        </div>
+        <div class="col card planet" id="Pluto">
+          <img class="card-img-top" src="images/Pluto.png" alt="image of Pluto">
+          <div class="card-body">
+            <h6>Pluto</h6>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="planet-display">
+      <div class="col" >
+        <h4 class="planet-name"></h4>
+        <p>Each year here is <span id="solar-converter"></span> Earth years.</p>
+        <p>You would be <span id="age-on-planet"></span> years old on <span class="planet-name"></span>.</p>
+        <p>Based on average life expectancies, <span id="years-remaining"></span>.</p>
+      </div>
+    </div>
   </body>
 </html>

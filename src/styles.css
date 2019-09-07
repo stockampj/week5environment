@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  background-image: url(images/background.jpg);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#header {
+  text-align: center;
+}
+
+.col {
+
+}
+
+#user-sign-in {
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  background-color: rgba(255, 0, 0, 0.0);
+  border-radius: 5px;
+  border: solid thin rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: white;
+  width: 200px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: solid thin rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: white;
+  margin: 10px;
+  width: 200px;
+}
+
+#solar-display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.card {
+  display: block;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  width: 20%;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.0);
+  float: left;
+  white-space: nowrap;
+}
+
+
+#Saturn {
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.card img{
+  display: block;
+  width: 96%;
+}
+
+#Saturn img{
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  padding: 2%;
+}
+
+#planet-display {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  border: solid thin rgba(255, 255, 255, 0.2);
+
+}

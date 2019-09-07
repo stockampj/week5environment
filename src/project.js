@@ -36,7 +36,7 @@ export class Planet {
     let convertedRemainder = ((earthRemainder)/(this.solarConverter)).toFixed(1);
     convertedRemainder = parseFloat(convertedRemainder);
     if (convertedRemainder>=0) {
-      return "you have " + convertedRemainder + " years left on " + this.name;
+      return "you would have " + convertedRemainder + " years left on " + this.name;
     } else if (convertedRemainder<0)
       return "you are " + convertedRemainder*(-1) + " years past due on " + this.name;
   }
@@ -54,6 +54,7 @@ export class SolarSystem {
     const neptune = new Planet ("Neptune", 164.8, 8);
     const pluto = new Planet ("Pluto", 164.8, 9);
     this.system = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto];
+    this.person;
   }
 
   getPlanet(name) {
@@ -65,6 +66,10 @@ export class SolarSystem {
       }
     }
     return false;
+  }
+
+  addPerson(user) {
+    this.person = user;
   }
 }
 

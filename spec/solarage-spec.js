@@ -50,7 +50,7 @@ describe ('Planet', function(){
   it('checks if the planet convert age remainder method successfully converts a users remaining life to that of a particular planet', function(){
     let joel = new Person ("Joel", 36, "male");
     let mars = new Planet("Mars", 1.88, 4);
-    expect(mars.calcYearsRemaing(joel)).toEqual("you have 21.8 years left on Mars");
+    expect(mars.calcYearsRemaing(joel)).toEqual("you would have 21.8 years left on Mars");
   });
 });
 
